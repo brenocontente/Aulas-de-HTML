@@ -44,7 +44,7 @@ function divisao() {
 
 function salvarHistorico(nomeDaFuncao, num1, num2, resultado) {
     console.log("Função: " + nomeDaFuncao);
-    console.log("Primeiro numero: " + num1 + ", SegundoNumero: " + num2);
+    console.log("Primeiro numero: " + num1 + ", Segundo numero: " + num2);
     console.log("Resultado: " + resultado);
     console.log("--------------------------------------");
 
