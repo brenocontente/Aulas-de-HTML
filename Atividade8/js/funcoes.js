@@ -69,3 +69,15 @@ function apagarLocalStorage(){
         localStorage.clear();
     }
 }
+
+function calcularImposto(){
+    let valorParaCalcular = document.getElementById("valorParaCalcular").value;
+    let valor = Number(valorParaCalcular);
+    let valorCom20 = valor + (valor * 0.20);
+    let valorFinal = valorCom20 + (valorCom20 * 0.90);
+    
+    document.getElementById("resultado-imposto").innerText = valorFinal.toFixed(2);
+    
+    salvarHistorico("Cálculo de Imposto", valor, "-", valorFinal);
+
+    }
